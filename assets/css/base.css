@@ -1,39 +1,40 @@
-:root{
+:root {
     --primary-color: #EE4D2D;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --boder-color: #dbdbdb;
 }
 
-*{
+* {
     box-sizing: inherit;
 }
 
-html{
+html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-.grid{
+.grid {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.grid__full-width{
+.grid__full-width {
     width: 100%;
 }
 
-.grid__row{
+.grid__row {
     display: flex;
     flex-wrap: wrap;
 }
 
 
 /* Modal */
-.modal{
+.modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -42,16 +43,53 @@ html{
     display: flex;
 }
 
-.modal__overlay{
+.modal__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal__body{
+.modal__body {
     margin: auto;
-    background-color: var(--white-color);
     z-index: 1;
-    border-radius: 5px;
 }
+
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled{
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+

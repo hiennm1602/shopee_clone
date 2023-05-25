@@ -60,7 +60,10 @@ html {
     width: 83.3334%;
 }
 
-
+.color-background{
+    background-color: #fbfbfb;
+    max-width: 100%;
+}
 
 @keyframes fadeIn{
     from{
@@ -160,6 +163,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .select-input__label{
@@ -202,4 +206,44 @@ html {
 
 .select-input__link:hover{
     color: var(--primary-color);
+}
+
+/* pagination */
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item{
+    margin: 0 10px;
+}
+
+.pagination-item--active .pagination-item__link{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item__link{
+    display: block;
+    min-width: 40px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+}
+
+
+.pagination-item--active .pagination-item__link:hover{
+    background-color: #ed5c3f;
+}
+
+.pagination-item__icon{
+
 }

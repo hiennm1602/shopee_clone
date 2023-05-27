@@ -62,7 +62,12 @@ html {
 
 .color-background{
     background-color: #fbfbfb;
+    max-width: 100%;    
+}
+
+.color__background--1{
     max-width: 100%;
+    background-color: #f5f5f5;
 }
 
 @keyframes fadeIn{
